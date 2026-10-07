@@ -3,3 +3,5 @@
 # This playlist contains no TV channels. It references Apple's public HLS test stream.
 #EXTINF:-1 group-title="Samsung QA",Apple Bip Bop (HLS Test Stream)
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
+
+# Deployment refresh: 2026-10-07
