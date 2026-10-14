@@ -3,75 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official support and privacy information for TV Lounge, a playlist player for Samsung Smart TVs.">
-  <title>TV Lounge · Support</title>
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Meet TV Lounge, a modern playlist player for Samsung Smart TVs. Live TV, movies, series, favorites, EPG and more. Coming soon to Samsung Tizen.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TV Lounge — Your playlists. Your television.">
+  <meta property="og:description" content="A modern, personalized playlist player for Samsung Smart TVs. Coming soon.">
+  <meta property="og:image" content="assets/screenshots/tv-lounge-banner.png">
+  <title>TV Lounge — Samsung Smart TV Playlist Player</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="TV Lounge home">
-      <span class="brand-mark" aria-hidden="true">TV</span>
-      <span>TV Lounge</span>
-    </a>
-    <nav aria-label="Primary navigation">
-      <a aria-current="page" href="index.html">Support</a>
-      <a href="privacy.html">Privacy · Datenschutz</a>
-    </nav>
+    <a class="brand" href="index.html" aria-label="TV Lounge home"><img class="brand-icon" src="assets/icon.png" alt=""><span>TV Lounge</span></a>
+    <nav aria-label="Primary navigation"><a href="#features">Features</a><a href="#screenshots">Screenshots</a><a href="#support">Support</a><a href="privacy.html">Privacy</a></nav>
   </header>
-
   <main>
-    <section class="hero">
-      <p class="eyebrow">Samsung Smart TV</p>
-      <h1>Your playlists.<br>Your television.</h1>
-      <p class="lede">TV Lounge is a player for user-provided playlists. It does not sell, bundle, or provide television channels, movies, series, or subscriptions.</p>
-      <div class="actions">
-        <a class="button primary" href="privacy.html">Read the privacy policy</a>
-        <a class="button" href="#support">Get support</a>
+    <section class="landing-hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><span class="launch-label"><span class="status-dot"></span> COMING SOON · SAMSUNG SMART TV</span><p class="eyebrow">Your viewing experience, your way</p><h1 id="hero-title">Your playlists.<br><span class="gradient-text">Your television.</span></h1><p class="lede">Discover a clean, remote-friendly home for your own compatible live TV, movie and series playlists — all in one place.</p><div class="actions"><a class="button primary" href="#screenshots">Explore the app <span aria-hidden="true">↗</span></a><a class="button" href="#features">Discover features</a></div><p class="hero-disclaimer">TV Lounge is not yet available in the Samsung TV app store. No channels, movies, series or subscriptions are included.</p></div>
+      <div class="hero-image"><img src="assets/screenshots/tv-lounge-banner.png" width="2048" height="768" alt="TV Lounge promotional banner featuring the application's design"></div>
+    </section>
+    <section id="features" class="landing-section"><div class="section-heading"><p class="eyebrow">Built for the big screen</p><h2>Everything in one lounge.</h2><p class="section-intro">Find, organize and enjoy content from sources you choose, with a TV-first interface.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">▣</span><h3>Live TV, movies & series</h3><p>Browse your compatible playlists in dedicated sections with easy remote navigation.</p></article>
+        <article class="feature-card"><span class="feature-icon">☆</span><h3>Favorites & watchlist</h3><p>Keep your favorite channels and on-demand titles within easy reach.</p></article>
+        <article class="feature-card"><span class="feature-icon">↺</span><h3>Continue watching</h3><p>Resume supported movies and episodes from where you left off.</p></article>
+        <article class="feature-card"><span class="feature-icon">▤</span><h3>Program information</h3><p>Check now-and-next schedule details and connect an optional XMLTV program guide.</p></article>
+        <article class="feature-card"><span class="feature-icon">⌕</span><h3>Search & organize</h3><p>Search your library and personalize channel categories and ordering.</p></article>
+        <article class="feature-card"><span class="feature-icon">◐</span><h3>Make it yours</h3><p>Customize the interface with accent colors and personal theme presets.</p></article>
       </div>
     </section>
-
-    <section class="principles" aria-label="Product principles">
-      <article>
-        <span class="number">01</span>
-        <h2>Player only</h2>
-        <p>You add your own compatible playlist or service connection. TV Lounge does not provide media content.</p>
-      </article>
-      <article>
-        <span class="number">02</span>
-        <h2>Stored on your TV</h2>
-        <p>Playlist details, settings, favourites, watch history, and playback positions are stored locally on the television.</p>
-      </article>
-      <article>
-        <span class="number">03</span>
-        <h2>Direct connections</h2>
-        <p>Your TV connects directly to the playlist and streaming servers you choose. TV Lounge has no intermediary content server.</p>
-      </article>
-    </section>
-
-    <section id="support" class="support-panel">
-      <div>
-        <p class="eyebrow">Support</p>
-        <h2>Need help?</h2>
-        <p>For a useful report, include the Samsung TV model year, the TV Lounge version, the action you performed, and the exact error message. Never publish playlist URLs, usernames, passwords, or access tokens.</p>
-      </div>
-      <div class="support-links">
-        <a id="issues-link" class="button primary" href="https://github.com/Marziipa/TVLoungeJS/issues" target="_blank" rel="noopener noreferrer">Open GitHub support</a>
-        <p class="fine-print">Use the public issue tracker for support. Never post playlist credentials, private URLs, or other sensitive information.</p>
+    <section id="screenshots" class="landing-section"><div class="section-heading"><p class="eyebrow">A closer look</p><h2>Made to feel at home on your TV.</h2><p class="section-intro">Actual TV Lounge application screenshots, captured in its PC preview with a public demo catalogue.</p></div>
+      <div class="screenshot-grid">
+        <figure class="shot"><img src="assets/screenshots/home.png" width="1920" height="1080" loading="lazy" alt="TV Lounge home dashboard"><figcaption><strong>Home</strong><span>Your viewing dashboard</span></figcaption></figure>
+        <figure class="shot"><img src="assets/screenshots/live-tv.png" width="1920" height="1080" loading="lazy" alt="TV Lounge Live TV category browser"><figcaption><strong>Live TV</strong><span>Organized channel browsing</span></figcaption></figure>
+        <figure class="shot"><img src="assets/screenshots/settings.png" width="1920" height="1080" loading="lazy" alt="TV Lounge settings screen"><figcaption><strong>Settings</strong><span>Control your experience</span></figcaption></figure>
+        <figure class="shot"><img src="assets/screenshots/color-picker.png" width="1920" height="1080" loading="lazy" alt="TV Lounge theme and color picker"><figcaption><strong>Personalization</strong><span>Choose your favorite colors</span></figcaption></figure>
       </div>
     </section>
-
-    <section class="german-summary" lang="de">
-      <p class="eyebrow">Kurzfassung auf Deutsch</p>
-      <h2>TV Lounge ist ausschließlich ein Player.</h2>
-      <p>Die App liefert keine Sender, Filme, Serien, Abonnements oder Playlists. Vom Nutzer eingetragene Playlist-Daten, Einstellungen, Favoriten und Wiedergabestände werden lokal auf dem Fernseher gespeichert. Der Fernseher verbindet sich direkt mit den vom Nutzer ausgewählten Servern.</p>
-      <a class="text-link" href="privacy.html#de">Vollständige deutsche Datenschutzerklärung</a>
-    </section>
+    <section class="launch-panel"><div><p class="eyebrow">On the way to Samsung TVs</p><h2>Coming soon to the Tizen Store.</h2><p>TV Lounge is preparing for its Samsung Smart TV store release. Availability and compatible devices will be announced once confirmed.</p></div><span class="launch-pill">IN PREPARATION</span></section>
+    <section class="principles" aria-label="Product principles"><article><span class="number">01</span><h3>Player only</h3><p>TV Lounge does not sell, bundle or supply channels, films, series, playlists or subscriptions.</p></article><article><span class="number">02</span><h3>Local preferences</h3><p>Playlist details, settings, favorites and playback progress are stored locally on your television.</p></article><article><span class="number">03</span><h3>Your chosen servers</h3><p>Your TV connects directly to the playlist and streaming servers you select; TV Lounge has no intermediary content server.</p></article></section>
+    <section id="support" class="support-panel"><div><p class="eyebrow">Help & feedback</p><h2>Need support?</h2><p>When reporting a problem, include your Samsung TV model and model year, app version, steps to reproduce and the exact error. Never share playlist URLs, passwords, access tokens or other credentials publicly.</p></div><div class="support-links"><a class="button primary" href="https://github.com/Marziipa/TVLoungeJS/issues" target="_blank" rel="noopener noreferrer">Open GitHub support ↗</a><a class="text-link" href="privacy.html">Privacy policy / Datenschutzerklärung</a><a class="text-link" href="privacy-ko.html">한국어 개인정보 처리방침</a></div></section>
+    <section class="german-summary" lang="de"><p class="eyebrow">Informationen auf Deutsch</p><h2>Deine Playlists. Dein Fernseher.</h2><p>TV Lounge ist ein Player für eigene, kompatible Playlists auf Samsung Smart TVs. Die App stellt keine Sender, Filme, Serien oder Abonnements bereit. Einstellungen und Wiedergabestände werden lokal auf dem Fernseher gespeichert. TV Lounge befindet sich noch in Vorbereitung für die Veröffentlichung im Samsung Tizen Store.</p><a class="text-link" href="privacy.html#de">Deutsche Datenschutzerklärung ↗</a></section>
   </main>
-
-  <footer>
-    <span>TV Lounge</span>
-    <span>Independent software for Samsung Smart TVs</span>
-    <a href="privacy.html">Privacy · Datenschutz</a>
-  </footer>
+  <footer><span>© TV Lounge · Independent software for Samsung Smart TVs</span><span>App store release: coming soon</span><a href="privacy.html">Privacy · Datenschutz</a></footer>
 </body>
 </html>

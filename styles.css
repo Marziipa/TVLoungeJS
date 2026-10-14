@@ -108,3 +108,38 @@ footer { display: flex; justify-content: space-between; gap: 24px; padding: 52px
   .policy-nav .eyebrow, .policy-date { flex-basis: 100%; }
   footer { flex-direction: column; }
 }
+
+
+/* Public product landing page: additions to original support/privacy styling */
+.brand-icon{width:42px;height:42px;border-radius:12px;object-fit:cover}
+.landing-hero{padding:94px 0 72px;overflow:hidden}
+.hero-copy{max-width:850px;margin:0 auto;text-align:center}
+.launch-label{display:inline-flex;gap:10px;align-items:center;padding:8px 14px;border:1px solid #2e473d;border-radius:100px;background:#11241b;color:#a9f1cf;font-size:.71rem;letter-spacing:.11em;font-weight:800;margin-bottom:32px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
+.hero-copy h1{font-size:clamp(3.5rem,8vw,6.9rem);line-height:1.05}
+.gradient-text{color:var(--accent)}
+.hero-copy .lede{margin:25px auto 0;max-width:710px}
+.hero-copy .actions{justify-content:center;margin-top:29px}
+.hero-disclaimer{max-width:640px;margin:22px auto 0;color:var(--muted);font-size:.8rem}
+.hero-image{margin-top:57px;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#111820;box-shadow:0 30px 100px rgba(43,197,123,.12)}
+.hero-image img{width:100%;height:auto;display:block}
+.landing-section{padding:62px 0 30px;scroll-margin-top:30px}
+.section-heading{text-align:center;max-width:730px;margin:0 auto 34px}
+.section-heading h2{font-size:clamp(2.2rem,5vw,3.7rem)}
+.section-intro{color:var(--muted);margin:0 auto}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.feature-card{padding:32px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(140deg,#161d20,#101216)}
+.feature-icon{display:inline-grid;place-items:center;color:var(--accent);font-size:1.9rem;width:45px;height:45px;margin-bottom:12px}
+.feature-card h3{font-size:1.1rem;margin:0 0 9px}
+.feature-card p{color:var(--muted);font-size:.92rem;margin:0}
+.screenshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.shot{margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+.shot img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+.shot figcaption{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 18px;font-size:.9rem}
+.shot figcaption span{color:var(--muted);font-size:.82rem}
+.launch-panel{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:90px;padding:42px;border-radius:24px;border:1px solid #2e473d;background:linear-gradient(110deg,#13271f,#111318)}
+.launch-panel p:not(.eyebrow){color:var(--muted);max-width:620px;margin-bottom:0}
+.launch-pill{flex-shrink:0;border:1px solid #4b8d6d;border-radius:100px;color:var(--accent);padding:10px 16px;font-size:.75rem;font-weight:800;letter-spacing:.07em}
+.principles h3{margin:0 0 10px;font-size:1.2rem}
+@media(max-width:900px){.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.launch-panel{align-items:start;flex-direction:column}}
+@media(max-width:600px){.site-header{flex-direction:column;align-items:flex-start}.site-header nav{align-items:flex-start;flex-flow:row wrap;gap:9px 16px}.landing-hero{padding-top:50px}.feature-grid,.screenshot-grid{grid-template-columns:1fr}.shot figcaption{align-items:start;flex-direction:column;gap:0}.launch-panel{padding:25px}.hero-image{margin-top:34px}}
